@@ -1,80 +1,118 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Informações e recursos essenciais sobre os Direitos Humanos, Declaração Universal, Igualdade Racial e Direito à Educação.">
-    <title>Direitos Humanos - Informações e Recursos</title>
-    <link rel="stylesheet" href="index.css">
-  </head>
-  <body>
-    <header role="banner">
-      <h1>Direitos Humanos</h1>
-      <nav aria-label="Navegação Principal">
-       
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Site educativo sobre Direitos Humanos, relações étnico-raciais, povos indígenas e desigualdade no Brasil — Trio Paradadura.">
+  <title>Direitos Humanos | Trio Paradadura</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">◉</span>
+        <span>Direitos Humanos</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="index.html" class="nav-link is-active">Início</a>
+        <a href="direitos.html" class="nav-link">Direitos Humanos</a>
+        <a href="raciais.html" class="nav-link">Étnico-Raciais</a>
+        <a href="indio.html" class="nav-link">Povos Indígenas</a>
+        <a href="mapa.html" class="nav-link">Mapa</a>
       </nav>
-    </header>
+      <button class="menu-btn" id="menu-btn" aria-label="Abrir menu" type="button">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
 
-    <main role="main">
-      <section class="cards-container" aria-labelledby="secao-principais-temas">
-        <h2 id="secao-principais-temas" class="visually-hidden">Temas em Destaque</h2>
-        
+  <section class="hero">
+    <div class="container hero-inner">
+      <p class="eyebrow">Trio Paradadura · Projeto escolar</p>
+      <h1>Conhecer direitos é o primeiro passo para defendê-los</h1>
+      <p class="hero-text">Explore conteúdos sobre direitos humanos, relações étnico-raciais, povos indígenas e o mapa da desigualdade no Brasil — com textos, quizzes e mapa interativo.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#temas">Ver temas</a>
+        <a class="btn btn-ghost" href="mapa.html">Abrir mapa</a>
+      </div>
+    </div>
+  </section>
+
+  <main id="temas">
+    <div class="container">
+      <header class="section-head">
+        <h2>Temas em destaque</h2>
+        <p>Escolha um caminho e aprofunde o conteúdo com quizzes ao final de cada página.</p>
+      </header>
+
+      <div class="cards">
         <article class="card">
-          <img 
-            src="https://tse1.explicit.bing.net/th/id/OIP.Rp8QktUYe63lGJ4rVjRVVQHaHa?w=1200&h=1200&rs=1&pid=ImgDetMain&o=7&rm=3" 
-            alt="Ilustração do Dia dos Direitos Humanos, símbolo da ONU." 
-            loading="lazy"
-          >
-          <div class="card-content">
-            <h2>Direitos humanos</h2>
-            
-            <a href="direitos.html">Saiba Mais </a>
+          <div class="card-media" style="background-image:url('https://images.unsplash.com/photo-1593113598332-cd288d649433?w=800&h=500&fit=crop')"></div>
+          <div class="card-body">
+            <span class="tag">Fundamentos</span>
+            <h3>Direitos Humanos</h3>
+            <p>Princípios da Constituição de 1988, tratados internacionais e a luta por dignidade — com quiz e trecho cultural.</p>
+            <a class="card-link" href="direitos.html">Saiba mais →</a>
           </div>
         </article>
 
         <article class="card">
-          <img 
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUyNJ7vkSyk8iWYNZDeDu0KNaL62YWshxiQw&s" 
-            alt="Capa de livro sobre Relações Étnico-Raciais."
-            loading="lazy"
-          >
-          <div class="card-content">
-            <h2>Relações Étnico-Racial</h2>
-           
-            <a href="raciais.html">Saiba Mais </a>
+          <div class="card-media" style="background-image:url('https://images.unsplash.com/photo-1529156069898-49953e39b3ac?w=800&h=500&fit=crop')"></div>
+          <div class="card-body">
+            <span class="tag">Diversidade</span>
+            <h3>Relações Étnico-Raciais</h3>
+            <p>Lei 10.639/03, ação afirmativa, racismo estrutural e marcos legais da educação antirracista.</p>
+            <a class="card-link" href="raciais.html">Saiba mais →</a>
           </div>
         </article>
 
         <article class="card">
-          <img 
-            src="https://i.ytimg.com/vi/VzjQEIKrkp8/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLDTKQAvPTYVFEwZXz7iQm8dHsY8Jw" 
-            alt="Ilustração de crianças diversas, representando o direito à educação inclusiva."
-            loading="lazy"
-          >
-          <div class="card-content">
-            <h2>Povos Indígenas</h2>
-            
-            <a href="indio.html">Saiba Mais </a>
+          <div class="card-media" style="background-image:url('https://images.unsplash.com/photo-1506905925346-21bda4d32df4?w=800&h=500&fit=crop')"></div>
+          <div class="card-body">
+            <span class="tag">Cultura</span>
+            <h3>Povos Indígenas</h3>
+            <p>História, alimentação, danças e a luta por terras e direitos — com quiz sobre a cultura indígena.</p>
+            <a class="card-link" href="indio.html">Saiba mais →</a>
           </div>
         </article>
-        
+
         <article class="card">
-          <img src="direito.jpg" 
-            alt="mapa da desigualdade e direitos"
-            loading="lazy"
-          >
-          <div class="card-content">
-            <h2>Mapa</h2>
-            
-            <a href="mapa.html">Saiba Mais </a>
+          <div class="card-media card-media-local" style="background-image:url('direito.jpg')"></div>
+          <div class="card-body">
+            <span class="tag">Brasil</span>
+            <h3>Mapa da Desigualdade</h3>
+            <p>Mapa interativo por regiões e estados, com focos de desigualdade e linha do tempo dos direitos humanos.</p>
+            <a class="card-link" href="mapa.html">Explorar mapa →</a>
           </div>
         </article>
-        
-      </section>
-    </main>
-    
-    <footer role="contentinfo">
-      <p>&copy; Trio Paradadura, todos os direitos reservados</p>
-    </footer>
-  </body>
+      </div>
+    </div>
+  </main>
+
+  <section class="cta">
+    <div class="container cta-inner">
+      <h2>Teste o que você aprendeu</h2>
+      <p>Cada página tem um quiz rápido. Comece pelos direitos humanos ou pelas relações étnico-raciais.</p>
+      <a class="btn btn-primary" href="direitos.html">Ir para o quiz</a>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>Trio Paradadura</strong> — projeto educativo sobre Direitos Humanos</p>
+      <p class="muted">© 2026 · Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const nav = document.getElementById('nav');
+    btn?.addEventListener('click', () => nav.classList.toggle('is-open'));
+    nav?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('is-open')));
+  </script>
+</body>
 </html>

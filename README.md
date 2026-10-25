@@ -6,21 +6,23 @@ Site educativo sobre **Direitos Humanos**, **relações étnico-raciais**, **pov
 
 | Arquivo | Conteúdo |
 |---------|----------|
-| `index.html` | Página inicial com cards |
-| `direitos.html` | Direitos Humanos + quiz |
-| `raciais.html` | Relações étnico-raciais + quiz |
+| `index.html` | Home com navegação e cards dos temas |
+| `direitos.html` | Direitos Humanos + quiz + trecho cultural |
+| `raciais.html` | Relações étnico-raciais + marcos legais + quiz |
 | `indio.html` | Povos indígenas e afrodescendentes + quiz |
-| `mapa.html` | Mapa interativo do Brasil (desigualdade por região) |
+| `mapa.html` | Mapa interativo do Brasil + linha do tempo |
 
 ## Como abrir
 
-Abra o `index.html` no navegador ou use um servidor local:
-
 ```bash
+# na pasta do projeto
 python3 -m http.server 8000
+# abra http://localhost:8000
 ```
+
+Ou abra o `index.html` no navegador.
 
 ## Autores
 
-Trio Paradadura  
+**Trio Paradadura**  
 [mathzs7r](https://github.com/mathzs7r)

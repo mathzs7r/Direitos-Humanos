@@ -1,40 +1,124 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
-    <title>MAPA</title>
-    
-    <style>
-     
-      body {
-        text-align: center; 
-      }
-      
-     
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mapa da Desigualdade | Direitos Humanos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,600;9..144,700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="index.css">
+  <style>
+    .map-page { padding: 2.5rem 0 4rem; }
+    .map-page h1 {
+      font-family: var(--display);
+      font-size: clamp(1.7rem, 4vw, 2.4rem);
+      text-align: center;
+      margin-bottom: 0.5rem;
+    }
+    .map-intro {
+      text-align: center;
+      color: var(--muted);
+      max-width: 640px;
+      margin: 0 auto 2rem;
+    }
+    #map {
+      max-width: 760px;
+      margin: 0 auto 1rem;
+      background: #fff;
+      border-radius: var(--radius);
+      border: 1px solid var(--line);
+      box-shadow: var(--shadow);
+      padding: 1rem;
+      min-height: 360px;
+    }
+    .legend-note {
+      text-align: center;
+      font-size: 0.9rem;
+      color: var(--muted);
+      margin-bottom: 3rem;
+    }
+    .timeline {
+      background: var(--surface);
+      border: 1px solid var(--line);
+      border-radius: var(--radius);
+      padding: 1.5rem;
+      box-shadow: var(--shadow);
+    }
+    .timeline h2 {
+      font-family: var(--display);
+      text-align: center;
+      margin-bottom: 1rem;
+    }
+    .timeline img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+    .back-link {
+      display: inline-block;
+      margin-top: 2rem;
+      font-weight: 700;
+      color: var(--primary);
+    }
+  </style>
+  <script src="mapdata.js"></script>
+  <script src="countrymap.js"></script>
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a href="index.html" class="brand">
+        <span class="brand-mark">◉</span>
+        <span>Direitos Humanos</span>
+      </a>
+      <nav class="nav" id="nav" aria-label="Principal">
+        <a href="index.html" class="nav-link">Início</a>
+        <a href="direitos.html" class="nav-link">Direitos Humanos</a>
+        <a href="raciais.html" class="nav-link">Étnico-Raciais</a>
+        <a href="indio.html" class="nav-link">Povos Indígenas</a>
+        <a href="mapa.html" class="nav-link is-active">Mapa</a>
+      </nav>
+      <button class="menu-btn" id="menu-btn" aria-label="Abrir menu" type="button">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </header>
 
-      #map {
-       max-width: 700px; 
-       margin: 0 auto; 
-      }
+  <main class="map-page">
+    <div class="container">
+      <h1>Mapa: desigualdade nas regiões</h1>
+      <p class="map-intro">Clique nos estados e nos marcadores das regiões para ver notas sobre desigualdades sociais, econômicas e de acesso a serviços no Brasil.</p>
 
-      
-    </style>
-    <script src="mapdata.js"></script>
-    <script src="countrymap.js"></script>
-  </head>
-  <body>
-    <h1>MAPA: DESIGUALDADE NAS REGIÕES</h1>
-    <div id="map">  </div>
-    
-     
-    <h1>Linha Do Tempo Da Política Dos Direitos Humanos</h1>
-    
-    <br> 
+      <div id="map"></div>
+      <p class="legend-note">Cores por região · marcadores com descrições de desigualdade</p>
 
-    <img src="https://1.bp.blogspot.com/-fM7Ycm_GeX0/V04Mo_LK8oI/AAAAAAAAFvg/3_F5NdZzpDk3b3LMYWEQWr8cF2bj63ohACLcB/s1600/Avan%25C3%25A7o%2Bno%2BTempo%2BDireitos%2BHumanos.png" 
-         
-         class="imagem-centralizada"
-         style="max-width: 80%; height: auto;">
-  
-  </body>
+      <section class="timeline">
+        <h2>Linha do tempo da política de direitos humanos</h2>
+        <img
+          src="https://1.bp.blogspot.com/-fM7Ycm_GeX0/V04Mo_LK8oI/AAAAAAAAFvg/3_F5NdZzpDk3b3LMYWEQWr8cF2bj63ohACLcB/s1600/Avan%25C3%25A7o%2Bno%2BTempo%2BDireitos%2BHumanos.png"
+          alt="Linha do tempo dos avanços em direitos humanos"
+          loading="lazy">
+      </section>
+
+      <p style="text-align:center">
+        <a class="back-link" href="index.html">← Voltar ao início</a>
+      </p>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>Trio Paradadura</strong> — projeto educativo sobre Direitos Humanos</p>
+      <p class="muted">© 2026 · Todos os direitos reservados</p>
+    </div>
+  </footer>
+
+  <script>
+    const btn = document.getElementById('menu-btn');
+    const nav = document.getElementById('nav');
+    btn?.addEventListener('click', () => nav.classList.toggle('is-open'));
+    nav?.querySelectorAll('a').forEach(a => a.addEventListener('click', () => nav.classList.remove('is-open')));
+  </script>
+</body>
 </html>
