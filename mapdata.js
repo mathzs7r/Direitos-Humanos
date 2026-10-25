@@ -174,7 +174,7 @@ var simplemaps_countrymap_mapdata={
       name: "Piauí",
       color: "#1ce9d4",
       hover_color: "#0b8990",
-      description: "Estado da região Nordeste"
+      description: "Estado da região Sudeste"
     },
     BRPR: {
       name: "Paraná",
@@ -278,7 +278,7 @@ var simplemaps_countrymap_mapdata={
     "4": {
       lat: "-20.000",
       lng: "-45.000",
-      name: "Sudeste",
+      name: "Centro Oeste",
       color: "#000000",
       size: "30",
       type: "circle",
@@ -286,33 +286,114 @@ var simplemaps_countrymap_mapdata={
     }
   },
   labels: {
-    BRAC: { name: "Acre", parent_id: "BRAC" },
-    BRAL: { name: "Alagoas", parent_id: "BRAL" },
-    BRAM: { name: "Amazonas", parent_id: "BRAM" },
-    BRAP: { name: "Amapá", parent_id: "BRAP" },
-    BRBA: { name: "Bahia", parent_id: "BRBA" },
-    BRCE: { name: "Ceará", parent_id: "BRCE" },
-    BRDF: { name: "Distrito Federal", parent_id: "BRDF" },
-    BRES: { name: "Espírito Santo", parent_id: "BRES" },
-    BRGO: { name: "Goiás", parent_id: "BRGO" },
-    BRMA: { name: "Maranhão", parent_id: "BRMA" },
-    BRMG: { name: "Minas Gerais", parent_id: "BRMG" },
-    BRMS: { name: "Mato Grosso do Sul", parent_id: "BRMS" },
-    BRMT: { name: "Mato Grosso", parent_id: "BRMT" },
-    BRPA: { name: "Pará", parent_id: "BRPA" },
-    BRPB: { name: "Paraíba", parent_id: "BRPB" },
-    BRPE: { name: "Pernambuco", parent_id: "BRPE" },
-    BRPI: { name: "Piauí", parent_id: "BRPI" },
-    BRPR: { name: "Paraná", parent_id: "BRPR" },
-    BRRJ: { name: "Rio de Janeiro", parent_id: "BRRJ" },
-    BRRN: { name: "Rio Grande do Norte", parent_id: "BRRN" },
-    BRRO: { name: "Rondônia", parent_id: "BRRO" },
-    BRRR: { name: "Roraima", parent_id: "BRRR" },
-    BRRS: { name: "Rio Grande do Sul", parent_id: "BRRS" },
-    BRSC: { name: "Santa Catarina", parent_id: "BRSC" },
-    BRSE: { name: "Sergipe", parent_id: "BRSE" },
-    BRSP: { name: "São Paulo", parent_id: "BRSP" },
-    BRTO: { name: "Tocantins", parent_id: "BRTO" }
+    BRAC: {
+      name: "Acre",
+      parent_id: "BRAC"
+    },
+    BRAL: {
+      name: "Alagoas",
+      parent_id: "BRAL"
+    },
+    BRAM: {
+      name: "Amazonas",
+      parent_id: "BRAM"
+    },
+    BRAP: {
+      name: "Amapá",
+      parent_id: "BRAP"
+    },
+    BRBA: {
+      name: "Bahia",
+      parent_id: "BRBA"
+    },
+    BRCE: {
+      name: "Ceará",
+      parent_id: "BRCE"
+    },
+    BRDF: {
+      name: "Distrito Federal",
+      parent_id: "BRDF"
+    },
+    BRES: {
+      name: "Espírito Santo",
+      parent_id: "BRES"
+    },
+    BRGO: {
+      name: "Goiás",
+      parent_id: "BRGO"
+    },
+    BRMA: {
+      name: "Maranhão",
+      parent_id: "BRMA"
+    },
+    BRMG: {
+      name: "Minas Gerais",
+      parent_id: "BRMG"
+    },
+    BRMS: {
+      name: "Mato Grosso do Sul",
+      parent_id: "BRMS"
+    },
+    BRMT: {
+      name: "Mato Grosso",
+      parent_id: "BRMT"
+    },
+    BRPA: {
+      name: "Pará",
+      parent_id: "BRPA"
+    },
+    BRPB: {
+      name: "Paraíba",
+      parent_id: "BRPB"
+    },
+    BRPE: {
+      name: "Pernambuco",
+      parent_id: "BRPE"
+    },
+    BRPI: {
+      name: "Piauí",
+      parent_id: "BRPI"
+    },
+    BRPR: {
+      name: "Paraná",
+      parent_id: "BRPR"
+    },
+    BRRJ: {
+      name: "Rio de Janeiro",
+      parent_id: "BRRJ"
+    },
+    BRRN: {
+      name: "Rio Grande do Norte",
+      parent_id: "BRRN"
+    },
+    BRRO: {
+      name: "Rondônia",
+      parent_id: "BRRO"
+    },
+    BRRR: {
+      name: "Roraima",
+      parent_id: "BRRR"
+    },
+    BRRS: {
+      name: "Rio Grande do Sul",
+      parent_id: "BRRS"
+    },
+    BRSC: {
+      name: "Santa Catarina",
+      parent_id: "BRSC"
+    },
+    BRSE: {
+      name: "Sergipe",
+      parent_id: "BRSE"
+    },
+    BRSP: {
+      name: "São Paulo",
+      parent_id: "BRSP"
+    },
+    BRTO: {
+      name: "Tocantins",
+      parent_id: "BRTO"
+    }
   },
   legend: {
     entries: []

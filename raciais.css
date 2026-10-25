@@ -58,6 +58,7 @@ p {
     text-align: justify;
 }
 
+
 a {
     color: var(--cor-fundo);
     text-decoration: none;
@@ -68,11 +69,12 @@ a {
 a:hover, a:focus {
     color: var(--cor-apoio);
     outline: 2px solid var(--cor-destaque-2);
-    outline-offset: 2px;
+    outline-offset: 2px; 
+    
 }
 
 nav a {
-    color: var(--cor-fundo);
+    color: var(--cor-fundo-claro);
     text-decoration: none;
     font-weight: bold;
     padding: 0.5em 1em;
@@ -82,7 +84,7 @@ nav a {
 }
 
 nav a:hover {
-    color: var(--cor-destaque-2);
+    color: var(--cor-acento);
     background-color: rgba(255, 255, 255, 0.1);
     text-decoration: none;
 }
@@ -113,12 +115,13 @@ nav a:hover {
     height: 100%;
     border: none;
 }
+        
 
 .lista-leis {
-    list-style-type: none;
+    list-style-type: none; 
     padding-left: 0;
 }
-
+        
 .lista-leis li {
     background-color: var(--cor-suave);
     margin-bottom: 10px;
@@ -134,9 +137,9 @@ nav a:hover {
 
 footer p {
     text-align: center;
-    margin: 0 auto;
-    width: 100%;
-    background-color: #003366;
+    margin: 0 auto; 
+    width: 100%; 
+    background-color:#003366;
     padding: 20px 0;
     font-size: 0.9em;
     color: var(--cor-suave);

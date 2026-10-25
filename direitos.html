@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Direitos Humanos - Detalhes e Cultura</title>
+    <link rel="stylesheet" href="direitos.css"> 
+</head>
+<body>
+    
+    <header>
+        <h1>Direitos Humanos</h1>
+        <a href="index.html">Página inicial</a> 
+    </header>
+    
+    <main>
+        <section class="conteudo-informativo">
+            <h2>Princípios e Compromissos</h2>
+            <p>Os direitos humanos são fundamentais para garantir a dignidade e a igualdade de todos os cidadãos no Brasil. A Constituição Federal de 1988 estabelece os princípios básicos dos direitos humanos, incluindo a igualdade entre homens e mulheres, a liberdade de expressão e opinião, a liberdade de reunião e associação, o direito à educação, à saúde, à moradia digna e à segurança pública.</p>
+            
+            <p>O Brasil é signatário de tratados internacionais de direitos humanos e trabalha para melhorar a proteção dos direitos humanos, priorizando a proteção dos direitos das crianças e adolescentes, das pessoas com deficiência e dos idosos. A igualdade racial e étnica é um princípio fundamental, e o direito à não discriminação é garantido.</p>
+
+            <p>A liberdade de imprensa é essencial para a democracia, e o acesso à justiça é um direito de todos. A proteção dos direitos humanos é um desafio contínuo, e a sociedade civil tem um papel importante na defesa dos direitos humanos. A educação em direitos humanos é fundamental para promover o respeito aos direitos humanos e construir uma sociedade justa. A transparência e a accountability são fundamentais, e o acesso à informação é um direito humano. A proteção dos direitos humanos é um compromisso de todos, e juntos podemos construir uma sociedade mais justa e igualitária.</p>
+        </section>
+
+        <section class="ilustracao-relacionada">
+            <figure>
+                <img src="https://online.pubhtml5.com/dvar/sqjj/files/large/1.jpg" alt="Documento sobre Direitos Humanos ou legislação relacionada.">
+            </figure>
+        </section>
+        
+
+        
+
+        <section class="trecho-cultural">
+            <h2>Trecho da Música "Bob Marley"</h2>
+            <p class="artista">Get Up, Stand Up</p>
+            <p class="letra">
+                Get up, stand up: Stand up for your rights
+                Get up, stand up: Stand up for your rights
+                Get up, stand up: Stand up for your rights
+                Get up, stand up: Don't give up the fight
+                
+                Preacher man, don't tell me
+                Heaven is under the earth
+                I know you don't know
+                What life is really worth
+                It's not all that glitters is gold
+                Half the story has never been told
+                So now you see the light, eh
+                Stand up for your rights, come on
+                
+                Get up, stand up, stand up for your rights
+                Get up, stand up, don't give up the fight
+                Get up, stand up, stand up for your rights
+                Get up, stand up, don't give up the fight
+                
+                Most people think
+                Great God will come from the skies
+                Take away everything
+                And make everybody feel high
+                But if you know what life is worth
+                You will look for yours on earth
+                And now you see the light
+                You stand up for your rights
+                Jah
+            </p>
+        </section>
+        
+        <section class="quiz-container">
+            <h2>Quizz sobre Direitos Humanos</h2>
+            <div id="quiz-area">
+            </div>
+            <button id="submit-quiz" onclick="submitQuiz()" style="display: none;">Ver Resultado</button>
+            <div id="quiz-result"></div>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; Trio Paradadura, todos os direitos reservados </p>
+    </footer>
+    <script>
+        const quizData = {
+            "questions": [
+                {
+                    "questionNumber": 1,
+                    "question": "Qual é o principal documento legal brasileiro que, segundo o texto, estabelece os princípios básicos dos direitos humanos, incluindo a igualdade entre homens e mulheres e a liberdade de expressão?",
+                    "answerOptions": [
+                        { "text": "Declaração Universal dos Direitos Humanos (DUDH)", "isCorrect": false, "rationale": "Embora seja o marco global, o texto se refere especificamente ao documento nacional que estabelece esses princípios no Brasil." },
+                        { "text": "Código Civil Brasileiro de 2002", "isCorrect": false, "rationale": "Este documento trata do direito privado e das relações civis, não sendo a fonte primária dos direitos humanos fundamentais." },
+                        { "text": "Constituição Federal de 1988", "isCorrect": true, "rationale": "A Constituição Federal de 1988, também conhecida como Constituição Cidadã, é a lei suprema que garante os direitos fundamentais no Brasil." },
+                        { "text": "Estatuto da Criança e do Adolescente (ECA)", "isCorrect": false, "rationale": "O ECA é um documento específico para os direitos de crianças e adolescentes, mas não a fonte de todos os direitos humanos básicos." }
+                    ],
+                    "hint": "Pense no documento que rege todas as leis e a estrutura do Estado brasileiro."
+                },
+                {
+                    "questionNumber": 2,
+                    "question": "O Brasil é signatário de tratados internacionais de direitos humanos. O que o texto afirma ser um compromisso contínuo do país em relação a esses tratados?",
+                    "answerOptions": [
+                        { "text": "Apenas ratificar novos tratados, sem foco na implementação interna.", "isCorrect": false, "rationale": "A ratificação é importante, mas o compromisso real exige trabalho para melhorar a proteção dos direitos dentro do país." },
+                        { "text": "Trabalhar para melhorar a proteção dos direitos humanos.", "isCorrect": true, "rationale": "O texto afirma explicitamente que o Brasil trabalha para melhorar a proteção dos direitos humanos, o que reflete seu compromisso internacional." },
+                        { "text": "Suspender temporariamente a adesão a tratados que conflitem com leis internas.", "isCorrect": false, "rationale": "A suspensão de tratados não está mencionada e seria contrária ao compromisso de proteção e melhoria." },
+                        { "text": "Priorizar apenas a proteção dos direitos econômicos e sociais.", "isCorrect": false, "rationale": "O texto não limita a priorização, mas sim menciona grupos vulneráveis específicos, como crianças e idosos." }
+                    ],
+                    "hint": "Busque a palavra-chave 'trabalha' ou 'melhorar' no trecho sobre tratados internacionais."
+                },
+                {
+                    "questionNumber": 3,
+                    "question": "Qual é um dos grupos de pessoas cujos direitos o Brasil prioriza a proteção, segundo o texto informativo?",
+                    "answerOptions": [
+                        { "text": "Empresários e investidores estrangeiros", "isCorrect": false, "rationale": "Estes grupos não são mencionados no contexto de proteção prioritária de direitos humanos na passagem." },
+                        { "text": "Membros do Poder Legislativo e Executivo", "isCorrect": false, "rationale": "O foco da prioridade são os grupos historicamente vulneráveis e não as autoridades estatais." },
+                        { "text": "Pessoas com deficiência", "isCorrect": true, "rationale": "O texto menciona 'proteção dos direitos das crianças e adolescentes, das pessoas com deficiência e dos idosos' como uma prioridade." },
+                        { "text": "Servidores públicos de alta patente", "isCorrect": false, "rationale": "Este grupo não faz parte dos grupos vulneráveis que recebem prioridade de proteção, de acordo com o texto." }
+                    ],
+                    "hint": "O texto lista três grupos específicos que recebem atenção prioritária do Brasil."
+                }
+            ]
+        };
+
+        const quizArea = document.getElementById('quiz-area');
+        const submitButton = document.getElementById('submit-quiz');
+        const resultArea = document.getElementById('quiz-result');
+
+        function buildQuiz() {
+            quizData.questions.forEach((q, index) => {
+                const questionElement = document.createElement('div');
+                questionElement.classList.add('question');
+                questionElement.innerHTML = `<h3>${q.questionNumber}. ${q.question}</h3>`;
+
+                const optionsElement = document.createElement('div');
+                optionsElement.classList.add('options');
+
+                q.answerOptions.forEach((option, optionIndex) => {
+                    const optionLabel = document.createElement('label');
+                    optionLabel.innerHTML = `
+                        <input type="radio" name="question${q.questionNumber}" value="${optionIndex}">
+                        ${option.text}
+                    `;
+                    optionsElement.appendChild(optionLabel);
+                });
+
+                const hintButton = document.createElement('button');
+                hintButton.textContent = 'Dica';
+                hintButton.classList.add('hint-button');
+                hintButton.onclick = () => alert(`Dica: ${q.hint}`);
+
+                questionElement.appendChild(optionsElement);
+                questionElement.appendChild(hintButton);
+                quizArea.appendChild(questionElement);
+            });
+
+            submitButton.style.display = 'block';
+        }
+
+        function submitQuiz() {
+            let score = 0;
+            let resultsHTML = '<h2>Seu Resultado</h2>';
+
+            quizData.questions.forEach((q, index) => {
+                const questionName = `question${q.questionNumber}`;
+                const selectedOption = document.querySelector(`input[name="${questionName}"]:checked`);
+
+                let isCorrect = false;
+                let rationaleText = '';
+
+                if (selectedOption) {
+                    const selectedIndex = parseInt(selectedOption.value);
+                    const correctAnswerIndex = q.answerOptions.findIndex(opt => opt.isCorrect);
+
+                    isCorrect = selectedIndex === correctAnswerIndex;
+                    rationaleText = q.answerOptions[selectedIndex].rationale;
+
+                    if (isCorrect) {
+                        score++;
+                    }
+                } else {
+                    const correctAnswer = q.answerOptions.find(opt => opt.isCorrect);
+                    rationaleText = `Você não respondeu. A resposta correta era: ${correctAnswer.text}.`;
+                }
+
+                resultsHTML += `
+                    <div class="result-item" style="border: 1px solid ${isCorrect ? 'green' : 'red'}; margin-bottom: 15px; padding: 10px;">
+                        <h4>${q.questionNumber}. ${q.question}</h4>
+                        <p style="color: ${isCorrect ? 'green' : 'red'};">
+                            ${isCorrect ? '✅ Correto!' : '❌ Incorreto!'}
+                        </p>
+                        <p><strong>Explicação:</strong> ${rationaleText}</p>
+                    </div>
+                `;
+            });
+
+            const totalQuestions = quizData.questions.length;
+            const finalScore = `<h3>Você acertou ${score} de ${totalQuestions} perguntas! (${((score / totalQuestions) * 100).toFixed(0)}%)</h3>`;
+
+            resultArea.innerHTML = finalScore + resultsHTML;
+
+            submitButton.disabled = true;
+        }
+
+        document.addEventListener('DOMContentLoaded', buildQuiz);
+    </script>
+</body>
+
+</html>
