@@ -1,0 +1,137 @@
+:root {
+    --cor-principal: #007AC9;
+    --cor-acento: #4CAF50;
+    --cor-acento-hover: #388E3C;
+    
+    --cor-fundo-claro: #FFFFFF;
+    --cor-fundo-suave: #f4f4f9;
+    --cor-texto: #212121;
+    --cor-borda-card: #ddd;
+}
+
+body {
+    font-family: 'Helvetica Neue', Arial, sans-serif;
+    background-color: var(--cor-fundo-suave);
+    color: var(--cor-texto);
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+h1, h2 {
+    color: var(--cor-texto);
+    line-height: 1.2;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border-width: 0;
+}
+
+header {
+    background-color: var(--cor-principal);
+    color: var(--cor-fundo-claro);
+    padding: 1.5em 20px;
+    text-align: center;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+header h1 {
+    color: var(--cor-fundo-claro);
+    margin: 0;
+    font-size: 2em;
+}
+
+nav a {
+    color: var(--cor-fundo-claro);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5em 1em;
+    display: inline-block;
+    transition: color 0.3s, background-color 0.3s;
+    border-radius: 4px;
+}
+
+nav a:hover {
+    color: var(--cor-acento);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    padding: 40px 20px;
+}
+
+.card {
+    flex: 1 1 300px;
+    max-width: 350px;
+    
+    background-color: var(--cor-fundo-claro);
+    border: 1px solid var(--cor-borda-card);
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    transition: transform 0.3s, box-shadow 0.3s;
+    
+    border-top: 5px solid var(--cor-principal);
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+}
+
+.card-content {
+    padding: 20px;
+}
+
+.card-content h2 {
+    margin-top: 0;
+    color: var(--cor-principal);
+    font-size: 1.5em;
+}
+
+.card-content p {
+    margin-bottom: 15px;
+}
+
+.card-content a {
+    display: inline-block;
+    background-color: var(--cor-acento);
+    color: var(--cor-fundo-claro);
+    padding: 0.6em 1.2em;
+    border-radius: 4px;
+    text-decoration: none;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: background-color 0.3s;
+}
+
+.card-content a:hover {
+    background-color: var(--cor-acento-hover);
+}
+
+footer {
+    background-color: var(--cor-principal);
+    color: var(--cor-fundo-claro);
+    text-align: center;
+    padding: 1em 0;
+    margin-top: 235px;
+}
